@@ -1,0 +1,1226 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production/UserInterface_V1.X.production.obj
+cinit CODE 0 EA7C EA7C A 1
+text0 CODE 0 F3F4 F3F4 AE2 1
+text1 CODE 0 EC6C EC6C 4E 1
+text2 CODE 0 EA72 EA72 A 1
+text3 CODE 0 EA6A EA6A 8 1
+text4 CODE 0 EA62 EA62 8 1
+text5 CODE 0 F0E8 F0E8 30C 1
+text6 CODE 0 EA92 EA92 C 1
+text7 CODE 0 EACC EACC 1E 1
+text8 CODE 0 EB34 EB34 26 1
+text9 CODE 0 EBE4 EBE4 42 1
+text10 CODE 0 ED0A ED0A 52 1
+text11 CODE 0 EB82 EB82 2A 1
+text12 CODE 0 EAB0 EAB0 1C 1
+text13 CODE 0 EC26 EC26 46 1
+text14 CODE 0 EA86 EA86 C 1
+text15 CODE 0 ED5C ED5C 56 1
+text16 CODE 0 ECBA ECBA 50 1
+text17 CODE 0 EAEA EAEA 24 1
+text18 CODE 0 EF3C EF3C 1AC 1
+text19 CODE 0 EE8E EE8E AE 1
+text20 CODE 0 EB0E EB0E 26 1
+text21 CODE 0 EA9E EA9E 12 1
+text22 CODE 0 EDB2 EDB2 5A 1
+text23 CODE 0 EE0C EE0C 82 1
+text24 CODE 0 EBAC EBAC 38 1
+text25 CODE 0 EB5A EB5A 28 1
+cstackCOMRAM COMRAM 1 1 1 67 1
+mediumconst MEDIUMCONST 0 FED6 FED6 12A 1
+$/tmp/xc1dNHX3J.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 80-F7F 1
+SFR F80-FFF 1
+BANK0 80-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-EA61 1
+STACK 80-F7F 1
+SMALLCONST 1000-EA61 1
+CODE 4-EA61 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-F7F 1
+BIGRAM 68-F7F 1
+COMRAM 68-7F 1
+EEDATA F00000-F003FF 1
+MEDIUMCONST 1000-EA61 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/UserInterface_V1.X.production.obj
+EB5A text25 CODE >33:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB5C text25 CODE >37:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB70 text25 CODE >38:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB74 text25 CODE >40:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB76 text25 CODE >41:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB78 text25 CODE >42:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB7A text25 CODE >46:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB7E text25 CODE >48:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBAC text24 CODE >52:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBAE text24 CODE >55:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBC2 text24 CODE >56:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBC6 text24 CODE >58:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBCA text24 CODE >59:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBCC text24 CODE >60:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBCE text24 CODE >61:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBD0 text24 CODE >65:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBD4 text24 CODE >66:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBD8 text24 CODE >67:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBDA text24 CODE >70:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBDA text24 CODE >73:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBDE text24 CODE >75:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBE0 text24 CODE >76:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBE2 text24 CODE >77:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EE0C text23 CODE >8:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE0C text23 CODE >14:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE1C text23 CODE >15:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE28 text23 CODE >16:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE2C text23 CODE >17:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE2E text23 CODE >18:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE38 text23 CODE >19:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE3A text23 CODE >17:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE3E text23 CODE >22:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE48 text23 CODE >23:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE5C text23 CODE >24:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE6C text23 CODE >25:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE6E text23 CODE >27:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE78 text23 CODE >28:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE7C text23 CODE >29:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE7C text23 CODE >30:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EE8C text23 CODE >31:/Applications/microchip/xc8/v1.40/sources/common/lldiv.c
+EDB2 text22 CODE >13:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EDB2 text22 CODE >16:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EDB6 text22 CODE >17:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EDBA text22 CODE >18:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EDBE text22 CODE >19:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EE06 text22 CODE >20:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EE08 text22 CODE >21:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EE0A text22 CODE >22:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA9E text21 CODE >24:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA9E text21 CODE >26:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EB0E text20 CODE >53:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EB10 text20 CODE >56:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EB14 text20 CODE >57:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EB16 text20 CODE >58:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EB1A text20 CODE >59:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EB1E text20 CODE >60:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EB22 text20 CODE >61:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EB2E text20 CODE >62:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EB30 text20 CODE >63:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EE8E text19 CODE >62:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EE8E text19 CODE >64:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EE9E text19 CODE >65:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EEAC text19 CODE >67:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EEAE text19 CODE >68:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EEB6 text19 CODE >66:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EED4 text19 CODE >71:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EED6 text19 CODE >72:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EEE2 text19 CODE >73:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EEEA text19 CODE >70:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EF08 text19 CODE >76:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EF0A text19 CODE >77:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EF12 text19 CODE >75:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EF1C text19 CODE >79:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EF1E text19 CODE >80:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EF20 text19 CODE >81:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EF24 text19 CODE >82:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EF28 text19 CODE >83:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EF2C text19 CODE >84:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EF2E text19 CODE >85:/Applications/microchip/xc8/v1.40/sources/common/float.c
+EF3C text18 CODE >86:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EF3C text18 CODE >90:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EF50 text18 CODE >91:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EF64 text18 CODE >92:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EF80 text18 CODE >93:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EF8E text18 CODE >94:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFAA text18 CODE >95:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFB8 text18 CODE >96:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFBC text18 CODE >97:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFBE text18 CODE >98:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFC0 text18 CODE >99:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFC2 text18 CODE >100:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFC4 text18 CODE >101:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFC6 text18 CODE >102:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFD2 text18 CODE >103:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFD4 text18 CODE >104:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFE0 text18 CODE >106:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFE8 text18 CODE >110:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFF0 text18 CODE >111:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EFF2 text18 CODE >112:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F00A text18 CODE >114:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F012 text18 CODE >115:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F014 text18 CODE >113:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F01E text18 CODE >117:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F026 text18 CODE >121:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F02E text18 CODE >122:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F030 text18 CODE >123:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F048 text18 CODE >125:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F050 text18 CODE >126:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F052 text18 CODE >124:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F05A text18 CODE >129:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F05E text18 CODE >131:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F06A text18 CODE >132:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F076 text18 CODE >133:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F076 text18 CODE >134:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F07A text18 CODE >136:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F086 text18 CODE >137:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F092 text18 CODE >139:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F096 text18 CODE >140:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F0A2 text18 CODE >141:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F0A6 text18 CODE >142:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F0B2 text18 CODE >143:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F0BE text18 CODE >144:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+F0C2 text18 CODE >146:/Applications/microchip/xc8/v1.40/sources/common/ftadd.c
+EAEA text17 CODE >15:/Applications/microchip/xc8/v1.40/sources/common/ftneg.c
+EAEA text17 CODE >17:/Applications/microchip/xc8/v1.40/sources/common/ftneg.c
+EAF4 text17 CODE >18:/Applications/microchip/xc8/v1.40/sources/common/ftneg.c
+EB00 text17 CODE >19:/Applications/microchip/xc8/v1.40/sources/common/ftneg.c
+EB0C text17 CODE >20:/Applications/microchip/xc8/v1.40/sources/common/ftneg.c
+ECBA text16 CODE >72:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+ECBC text16 CODE >73:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+ECC2 text16 CODE >74:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+ECC6 text16 CODE >75:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+ECD0 text16 CODE >77:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+ECE0 text16 CODE >73:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+ED00 text16 CODE >79:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+ED5C text15 CODE >35:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED5E text15 CODE >37:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED64 text15 CODE >38:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED6A text15 CODE >39:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED70 text15 CODE >41:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED72 text15 CODE >42:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED7A text15 CODE >43:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED7C text15 CODE >44:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED84 text15 CODE >46:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED8A text15 CODE >48:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED90 text15 CODE >49:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED96 text15 CODE >50:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED9C text15 CODE >52:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+ED9E text15 CODE >53:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EDA6 text15 CODE >54:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EDA8 text15 CODE >55:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EDB0 text15 CODE >56:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EA86 text14 CODE >25:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EA88 text14 CODE >26:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EA8A text14 CODE >27:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EA90 text14 CODE >28:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EC26 text13 CODE >14:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EC26 text13 CODE >15:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EC36 text13 CODE >16:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EC3C text13 CODE >17:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EC42 text13 CODE >18:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EC48 text13 CODE >19:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EC4E text13 CODE >20:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EC54 text13 CODE >21:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EC5A text13 CODE >22:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EC6A text13 CODE >23:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EAB0 text12 CODE >66:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EAB2 text12 CODE >67:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EAB4 text12 CODE >68:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EAC2 text12 CODE >67:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EB82 text11 CODE >20:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB82 text11 CODE >21:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB82 text11 CODE >23:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB86 text11 CODE >24:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB8E text11 CODE >25:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EB94 text11 CODE >27:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBA4 text11 CODE >28:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EBA8 text11 CODE >30:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+ED0A text10 CODE >8:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED0A text10 CODE >14:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED12 text10 CODE >15:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED1A text10 CODE >16:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED1E text10 CODE >17:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED20 text10 CODE >18:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED26 text10 CODE >19:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED28 text10 CODE >17:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED2C text10 CODE >22:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED32 text10 CODE >23:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED3E text10 CODE >24:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED46 text10 CODE >25:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED48 text10 CODE >27:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED4E text10 CODE >28:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED52 text10 CODE >29:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED52 text10 CODE >30:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+ED5A text10 CODE >31:/Applications/microchip/xc8/v1.40/sources/common/lwdiv.c
+EBE4 text9 CODE >8:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EBE4 text9 CODE >13:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EBEC text9 CODE >14:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EBF0 text9 CODE >15:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EBF2 text9 CODE >16:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EBF8 text9 CODE >17:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EBFA text9 CODE >15:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EBFE text9 CODE >20:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EC0A text9 CODE >21:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EC12 text9 CODE >22:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EC18 text9 CODE >23:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EC1C text9 CODE >24:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EC1C text9 CODE >25:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EC24 text9 CODE >26:/Applications/microchip/xc8/v1.40/sources/common/lwmod.c
+EB34 text8 CODE >15:/Applications/microchip/xc8/v1.40/sources/common/Umul16.c
+EB34 text8 CODE >37:/Applications/microchip/xc8/v1.40/sources/common/Umul16.c
+EB40 text8 CODE >38:/Applications/microchip/xc8/v1.40/sources/common/Umul16.c
+EB48 text8 CODE >39:/Applications/microchip/xc8/v1.40/sources/common/Umul16.c
+EB50 text8 CODE >52:/Applications/microchip/xc8/v1.40/sources/common/Umul16.c
+EACC text7 CODE >8:/Applications/microchip/xc8/v1.40/sources/common/isdigit.c
+EACE text7 CODE >14:/Applications/microchip/xc8/v1.40/sources/common/isdigit.c
+EA92 text6 CODE >30:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EA94 text6 CODE >31:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EA96 text6 CODE >32:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+EA9C text6 CODE >33:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/lcd.c
+F0E8 text5 CODE >464:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F0E8 text5 CODE >533:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F0F0 text5 CODE >536:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F0F2 text5 CODE >538:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F0FA text5 CODE >541:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F100 text5 CODE >542:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F102 text5 CODE >546:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F10A text5 CODE >548:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F10E text5 CODE >551:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F110 text5 CODE >580:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F112 text5 CODE >581:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F116 text5 CODE >551:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F128 text5 CODE >597:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F13C text5 CODE >598:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F144 text5 CODE >600:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F160 text5 CODE >601:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F18C text5 CODE >602:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F1A2 text5 CODE >721:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F1A4 text5 CODE >723:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F1A6 text5 CODE >635:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F1D4 text5 CODE >822:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F1D4 text5 CODE >1251:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F1D8 text5 CODE >1259:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F1F0 text5 CODE >1261:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F1F4 text5 CODE >1262:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F1F8 text5 CODE >1263:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F200 text5 CODE >1266:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F202 text5 CODE >1286:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F21A text5 CODE >1294:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F21C text5 CODE >1305:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F228 text5 CODE >1306:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F248 text5 CODE >1305:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F24C text5 CODE >1316:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F258 text5 CODE >1317:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F278 text5 CODE >1316:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F27C text5 CODE >1294:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F28C text5 CODE >1345:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F2A0 text5 CODE >1346:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F2A6 text5 CODE >1381:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F2BC text5 CODE >1382:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F2CA text5 CODE >1384:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F2D2 text5 CODE >1387:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F2D6 text5 CODE >1392:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F2E2 text5 CODE >1393:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F2E8 text5 CODE >1415:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F2F0 text5 CODE >1417:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F2F6 text5 CODE >1418:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F2FE text5 CODE >1428:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F306 text5 CODE >1430:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F30C text5 CODE >1431:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F31A text5 CODE >1438:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F326 text5 CODE >1439:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F32C text5 CODE >1472:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F330 text5 CODE >1474:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F332 text5 CODE >1489:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F374 text5 CODE >1491:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F376 text5 CODE >1500:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F3A4 text5 CODE >1506:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F3BA text5 CODE >1523:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F3BC text5 CODE >1476:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F3CC text5 CODE >1524:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F3D2 text5 CODE >1474:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+F3DA text5 CODE >536:/Applications/microchip/xc8/v1.40/sources/common/doprnt.c
+EA62 text4 CODE >29:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA62 text4 CODE >31:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA66 text4 CODE >32:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA68 text4 CODE >33:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA6A text3 CODE >41:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA6A text3 CODE >43:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA6E text3 CODE >44:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA70 text3 CODE >45:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA72 text2 CODE >47:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA72 text2 CODE >49:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA76 text2 CODE >50:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EA7A text2 CODE >51:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/I2C.c
+EC6C text1 CODE >427:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EC6C text1 CODE >428:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EC70 text1 CODE >429:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EC7C text1 CODE >430:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EC88 text1 CODE >431:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EC94 text1 CODE >432:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+ECB0 text1 CODE >431:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+ECB4 text1 CODE >434:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+ECB8 text1 CODE >435:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F3F4 text0 CODE >88:/tmp/xcR9dIFvH
+F3F4 text0 CODE >88:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F3F4 text0 CODE >89:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F3F8 text0 CODE >93:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F3FC text0 CODE >94:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F3FE text0 CODE >95:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F402 text0 CODE >96:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F406 text0 CODE >97:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F40A text0 CODE >99:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F40E text0 CODE >100:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F412 text0 CODE >101:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F416 text0 CODE >102:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F41A text0 CODE >103:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F41E text0 CODE >105:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F422 text0 CODE >106:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F426 text0 CODE >108:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F428 text0 CODE >111:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F42C text0 CODE >114:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F42E text0 CODE >115:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F430 text0 CODE >117:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F432 text0 CODE >118:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F434 text0 CODE >119:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F436 text0 CODE >120:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F438 text0 CODE >121:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F43A text0 CODE >122:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F43C text0 CODE >124:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F440 text0 CODE >125:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F44C text0 CODE >126:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F484 text0 CODE >130:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F488 text0 CODE >133:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F490 text0 CODE >134:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4A4 text0 CODE >135:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4A8 text0 CODE >137:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4AC text0 CODE >140:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4AE text0 CODE >144:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4B6 text0 CODE >146:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4BA text0 CODE >147:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4C6 text0 CODE >148:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4CE text0 CODE >149:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4D2 text0 CODE >150:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4DE text0 CODE >151:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4EA text0 CODE >152:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4EE text0 CODE >155:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4F2 text0 CODE >156:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F4FE text0 CODE >157:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F50A text0 CODE >158:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F522 text0 CODE >157:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F526 text0 CODE >160:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F52E text0 CODE >161:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F532 text0 CODE >162:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F538 text0 CODE >163:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F556 text0 CODE >164:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F55C text0 CODE >165:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F57A text0 CODE >167:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F588 text0 CODE >168:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F590 text0 CODE >147:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F594 text0 CODE >172:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F59C text0 CODE >175:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F5A0 text0 CODE >176:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F5AC text0 CODE >177:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F5BA text0 CODE >178:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F5C2 text0 CODE >182:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F5C6 text0 CODE >183:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F5D2 text0 CODE >184:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F5E0 text0 CODE >185:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F5E8 text0 CODE >189:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F5EC text0 CODE >190:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F5F8 text0 CODE >191:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F606 text0 CODE >192:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F60E text0 CODE >140:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F60E text0 CODE >195:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F612 text0 CODE >196:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F61A text0 CODE >198:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F61A text0 CODE >201:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F61E text0 CODE >203:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F620 text0 CODE >204:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F622 text0 CODE >206:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F64A text0 CODE >208:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F64E text0 CODE >209:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F65A text0 CODE >210:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F666 text0 CODE >211:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F66A text0 CODE >213:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F66E text0 CODE >214:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F67A text0 CODE >215:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F686 text0 CODE >216:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F69E text0 CODE >215:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6A2 text0 CODE >218:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6AA text0 CODE >219:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6AE text0 CODE >221:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6B2 text0 CODE >222:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6B6 text0 CODE >223:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6BA text0 CODE >225:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6BE text0 CODE >226:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6CA text0 CODE >228:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6DE text0 CODE >229:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6E0 text0 CODE >230:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6F0 text0 CODE >231:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F6F2 text0 CODE >232:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F700 text0 CODE >228:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F706 text0 CODE >236:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F70C text0 CODE >235:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F712 text0 CODE >246:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F716 text0 CODE >247:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F71E text0 CODE >249:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F71E text0 CODE >251:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F722 text0 CODE >253:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F724 text0 CODE >254:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F726 text0 CODE >256:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F750 text0 CODE >258:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F754 text0 CODE >259:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F760 text0 CODE >260:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F766 text0 CODE >261:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F772 text0 CODE >262:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F780 text0 CODE >263:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F788 text0 CODE >266:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F78C text0 CODE >267:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F798 text0 CODE >268:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F79E text0 CODE >269:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F7AA text0 CODE >270:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F7B8 text0 CODE >271:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F7C0 text0 CODE >257:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F7C0 text0 CODE >274:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F7C4 text0 CODE >275:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F7C8 text0 CODE >276:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F7D4 text0 CODE >277:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F7F4 text0 CODE >278:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F814 text0 CODE >279:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F836 text0 CODE >283:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F83A text0 CODE >284:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F846 text0 CODE >285:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F852 text0 CODE >286:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F856 text0 CODE >288:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F85A text0 CODE >289:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F866 text0 CODE >290:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F872 text0 CODE >291:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F88A text0 CODE >290:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F88E text0 CODE >293:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F896 text0 CODE >294:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F89A text0 CODE >296:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F89E text0 CODE >297:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F8A2 text0 CODE >299:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F8A6 text0 CODE >300:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F8B8 text0 CODE >301:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F8CA text0 CODE >303:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F8D0 text0 CODE >304:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F8E2 text0 CODE >305:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F8F4 text0 CODE >307:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F914 text0 CODE >308:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F934 text0 CODE >309:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F954 text0 CODE >311:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F964 text0 CODE >312:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F974 text0 CODE >313:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F984 text0 CODE >314:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F994 text0 CODE >316:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F99C text0 CODE >317:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9A4 text0 CODE >319:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9A8 text0 CODE >320:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9AC text0 CODE >321:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9B2 text0 CODE >329:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9BA text0 CODE >330:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9C2 text0 CODE >332:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9CC text0 CODE >333:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9D6 text0 CODE >334:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9DE text0 CODE >335:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9E6 text0 CODE >336:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9F0 text0 CODE >337:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+F9FA text0 CODE >338:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA02 text0 CODE >339:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA0A text0 CODE >340:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA14 text0 CODE >341:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA1E text0 CODE >343:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA28 text0 CODE >344:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA32 text0 CODE >346:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA36 text0 CODE >347:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA4C text0 CODE >348:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA58 text0 CODE >349:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA5E text0 CODE >350:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA74 text0 CODE >351:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FA80 text0 CODE >352:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FAA0 text0 CODE >353:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FAC0 text0 CODE >354:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FAE0 text0 CODE >355:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FAE4 text0 CODE >356:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FAF0 text0 CODE >357:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FB10 text0 CODE >358:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FB30 text0 CODE >359:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FB50 text0 CODE >360:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FB54 text0 CODE >361:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FB60 text0 CODE >362:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FB80 text0 CODE >363:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FBA0 text0 CODE >364:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FBC0 text0 CODE >365:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FBC4 text0 CODE >366:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FBD0 text0 CODE >367:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FBF0 text0 CODE >368:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FC10 text0 CODE >369:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FC30 text0 CODE >370:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FC34 text0 CODE >371:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FC40 text0 CODE >372:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FC60 text0 CODE >373:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FC80 text0 CODE >374:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FCA0 text0 CODE >376:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FCC8 text0 CODE >377:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FCCC text0 CODE >378:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FCD0 text0 CODE >379:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FCD8 text0 CODE >380:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FCE0 text0 CODE >382:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FCEC text0 CODE >384:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FCF0 text0 CODE >385:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FD06 text0 CODE >386:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FD12 text0 CODE >387:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FD18 text0 CODE >388:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FD2E text0 CODE >389:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FD3A text0 CODE >390:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FD5A text0 CODE >391:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FD7A text0 CODE >392:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FD9A text0 CODE >394:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FDA0 text0 CODE >395:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FDA6 text0 CODE >396:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FDAE text0 CODE >397:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FDB6 text0 CODE >382:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FDBA text0 CODE >400:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FDE2 text0 CODE >401:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FDE6 text0 CODE >402:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FDF2 text0 CODE >403:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FE12 text0 CODE >404:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FE32 text0 CODE >405:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FE52 text0 CODE >406:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FE56 text0 CODE >407:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FE62 text0 CODE >408:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FE68 text0 CODE >409:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FE74 text0 CODE >410:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FE94 text0 CODE >411:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+FEB4 text0 CODE >412:/Users/sdy1130/MPLABXProjects/UserInterface_V1.X/main.c
+EA7C cinit CODE >1721:/tmp/xcR9dIFvH
+EA7C cinit CODE >1723:/tmp/xcR9dIFvH
+EA7C cinit CODE >1726:/tmp/xcR9dIFvH
+EA7C cinit CODE >1732:/tmp/xcR9dIFvH
+EA7C cinit CODE >1735:/tmp/xcR9dIFvH
+EA7E cinit CODE >1736:/tmp/xcR9dIFvH
+EA80 cinit CODE >1737:/tmp/xcR9dIFvH
+EA82 cinit CODE >1738:/tmp/xcR9dIFvH
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+putch@data 3 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___lwmod@counter C 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Lmediumconst FED6 0 MEDIUMCONST 0 mediumconst dist/default/production/UserInterface_V1.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Hspace_1 68 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of_lcdInst 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_lcdNibble ED5C 0 CODE 0 text15 dist/default/production/UserInterface_V1.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production/UserInterface_V1.X.production.obj
+__mediumconst FED6 0 MEDIUMCONST 0 mediumconst /tmp/xc1dNHX3J.obj
+I2C_Master_Init@c E 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/UserInterface_V1.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__end_of_delay_10ms EACC 0 CODE 0 text12 dist/default/production/UserInterface_V1.X.production.obj
+main@e 4B 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i 35 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@j 55 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@k 56 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@z 2C 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production/UserInterface_V1.X.production.obj
+main@eeprom_seconds 5C 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+_ADON 7E10 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_LATA F89 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_LATB F8A 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_LATC F8B 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_LATD F8C 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_LATE F8D 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_RCEN 7E2B 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_RSEN 7E29 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/xc1dNHX3J.obj
+_keys FED7 0 MEDIUMCONST 0 mediumconst dist/default/production/UserInterface_V1.X.production.obj
+_main F3F4 0 CODE 0 text0 dist/default/production/UserInterface_V1.X.production.obj
+___ftadd@f1 9 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___ftadd@f2 C 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+start 0 0 CODE 0 init /tmp/xc1dNHX3J.obj
+__end_of_delay_1s_interrupt ED0A 0 CODE 0 text16 dist/default/production/UserInterface_V1.X.production.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__end_of_Eeprom_WriteByte EBE4 0 CODE 0 text24 dist/default/production/UserInterface_V1.X.production.obj
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__size_of_Eeprom_WriteByte 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of_Eeprom_ReadByte 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup dist/default/production/UserInterface_V1.X.production.obj
+printf@c 22 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+printf@f D 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+I2C_Master_Read@a 2 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__size_of_key_pressed_check 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__accesstop 80 0 ABS 0 - /tmp/xc1dNHX3J.obj
+intlevel0 0 0 CODE 0 text /tmp/xc1dNHX3J.obj
+intlevel1 0 0 CODE 0 text /tmp/xc1dNHX3J.obj
+intlevel2 0 0 CODE 0 text /tmp/xc1dNHX3J.obj
+intlevel3 0 0 CODE 0 text /tmp/xc1dNHX3J.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/UserInterface_V1.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_delay_1s_interrupt ECBA 0 CODE 0 text16 dist/default/production/UserInterface_V1.X.production.obj
+I2C_Master_Read@temp 3 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production/UserInterface_V1.X.production.obj
+main@count_min_initial 5E 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@address_seconds 5A 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production/UserInterface_V1.X.production.obj
+___ftneg@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+printf@flag 1F 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+printf@prec 1C 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__end_of_lcdInst EA92 0 CODE 0 text14 dist/default/production/UserInterface_V1.X.production.obj
+___inthi_sp 0 0 STACK 2 stack /tmp/xc1dNHX3J.obj
+printf@width 20 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___intlo_sp 0 0 STACK 2 stack /tmp/xc1dNHX3J.obj
+_EECON1bits FA6 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of_initLCD 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/UserInterface_V1.X.production.obj
+key_pressed_check@check 3 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__end_of___wmul EB5A 0 CODE 0 text8 dist/default/production/UserInterface_V1.X.production.obj
+_EEADRH FAA 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_EECON2 FA7 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_EEDATA FA8 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/UserInterface_V1.X.production.obj
+__Hmediumconst 10000 0 MEDIUMCONST 0 mediumconst dist/default/production/UserInterface_V1.X.production.obj
+?_printf D 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/production/UserInterface_V1.X.production.obj
+___lwmod@divisor A 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__end_of___ftadd F0E8 0 CODE 0 text18 dist/default/production/UserInterface_V1.X.production.obj
+__end_of___ftneg EB0E 0 CODE 0 text17 dist/default/production/UserInterface_V1.X.production.obj
+__end_of___lldiv EE8E 0 CODE 0 text23 dist/default/production/UserInterface_V1.X.production.obj
+__end_of___lwdiv ED5C 0 CODE 0 text10 dist/default/production/UserInterface_V1.X.production.obj
+__end_of___lwmod EC26 0 CODE 0 text9 dist/default/production/UserInterface_V1.X.production.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_dpowers FEE8 0 MEDIUMCONST 0 mediumconst dist/default/production/UserInterface_V1.X.production.obj
+main@count_seconds_final 61 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___lwdiv@quotient 5 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__size_of_putch 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+___lwmod@dividend 8 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___lldiv@counter D 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/production/UserInterface_V1.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+start_initialization EA7C 0 CODE 0 cinit dist/default/production/UserInterface_V1.X.production.obj
+__CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__end_of_hexpowers FEFA 0 MEDIUMCONST 0 mediumconst dist/default/production/UserInterface_V1.X.production.obj
+_OSCCON FD3 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/UserInterface_V1.X.production.obj
+___lldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+main@count_seconds_initial 5F 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__end_of_key_pressed_check EBAC 0 CODE 0 text11 dist/default/production/UserInterface_V1.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of_delay_10ms 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_T1SYNC 7E6A 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_SSPADD FC8 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_SSPBUF FC9 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_TMR1CS 7E69 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_TMR1IE 7CE8 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_TMR1IF 7CF0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_TMR1ON 7E68 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_TRISC3 7CA3 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_TRISC4 7CA4 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+___ftpack EE8E 0 CODE 0 text19 dist/default/production/UserInterface_V1.X.production.obj
+_hexpowers FEF2 0 MEDIUMCONST 0 mediumconst dist/default/production/UserInterface_V1.X.production.obj
+__end_of_printf F3F4 0 CODE 0 text5 dist/default/production/UserInterface_V1.X.production.obj
+___ftpack@arg 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___ftpack@exp 4 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+_isdigit$886 2 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__end_of_initLCD EC6C 0 CODE 0 text13 dist/default/production/UserInterface_V1.X.production.obj
+__end_of___ftpack EF3C 0 CODE 0 text19 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank8 0 0 ABS 0 bank8 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank9 0 0 ABS 0 bank9 dist/default/production/UserInterface_V1.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production/UserInterface_V1.X.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production/UserInterface_V1.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production/UserInterface_V1.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production/UserInterface_V1.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production/UserInterface_V1.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production/UserInterface_V1.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production/UserInterface_V1.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production/UserInterface_V1.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production/UserInterface_V1.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production/UserInterface_V1.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production/UserInterface_V1.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production/UserInterface_V1.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production/UserInterface_V1.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production/UserInterface_V1.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production/UserInterface_V1.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production/UserInterface_V1.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production/UserInterface_V1.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production/UserInterface_V1.X.production.obj
+___lwdiv@counter 7 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+I2C_Master_Write@d 2 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Hbank10 0 0 ABS 0 bank10 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank11 0 0 ABS 0 bank11 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank12 0 0 ABS 0 bank12 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank13 0 0 ABS 0 bank13 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank14 0 0 ABS 0 bank14 dist/default/production/UserInterface_V1.X.production.obj
+__Hbank15 0 0 ABS 0 bank15 dist/default/production/UserInterface_V1.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/UserInterface_V1.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production/UserInterface_V1.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst /tmp/xc1dNHX3J.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production/UserInterface_V1.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production/UserInterface_V1.X.production.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank8 0 0 ABS 0 bank8 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank9 0 0 ABS 0 bank9 dist/default/production/UserInterface_V1.X.production.obj
+__end_of_isdigit EAEA 0 CODE 0 text7 dist/default/production/UserInterface_V1.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production/UserInterface_V1.X.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production/UserInterface_V1.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production/UserInterface_V1.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production/UserInterface_V1.X.production.obj
+main@count_min 58 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___ftadd@exp1 14 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___ftadd@exp2 13 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___ftadd@sign 12 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production/UserInterface_V1.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production/UserInterface_V1.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production/UserInterface_V1.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production/UserInterface_V1.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production/UserInterface_V1.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production/UserInterface_V1.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production/UserInterface_V1.X.production.obj
+_PORTAbits F80 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_PORTBbits F81 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production/UserInterface_V1.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production/UserInterface_V1.X.production.obj
+__Hinit 4 0 CODE 0 init dist/default/production/UserInterface_V1.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production/UserInterface_V1.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production/UserInterface_V1.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/production/UserInterface_V1.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production/UserInterface_V1.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production/UserInterface_V1.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production/UserInterface_V1.X.production.obj
+__Linit 0 0 CODE 0 init dist/default/production/UserInterface_V1.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production/UserInterface_V1.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production/UserInterface_V1.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/production/UserInterface_V1.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production/UserInterface_V1.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+___wmul EB34 0 CODE 0 text8 dist/default/production/UserInterface_V1.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production/UserInterface_V1.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production/UserInterface_V1.X.production.obj
+_PEN 7E2A 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_SEN 7E28 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__S1 68 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of_delay_1s_interrupt 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_I2C_Master_Start EA62 0 CODE 0 text4 dist/default/production/UserInterface_V1.X.production.obj
+_I2C_Master_Write EA72 0 CODE 0 text2 dist/default/production/UserInterface_V1.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production/UserInterface_V1.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/UserInterface_V1.X.production.obj
+_key_pressed_check EB82 0 CODE 0 text11 dist/default/production/UserInterface_V1.X.production.obj
+lcdInst@data 3 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__CFG_CCP2MX$PORTC 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production/UserInterface_V1.X.production.obj
+___lldiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+delay_1s_interrupt@i 7 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+delay_1s_interrupt@n 6 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+_lcdInst EA86 0 CODE 0 text14 dist/default/production/UserInterface_V1.X.production.obj
+__Hramtop 1000 0 RAM 0 ramtop dist/default/production/UserInterface_V1.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production/UserInterface_V1.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production/UserInterface_V1.X.production.obj
+main@down_period 25 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+main@keypress 5D 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production/UserInterface_V1.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production/UserInterface_V1.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production/UserInterface_V1.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production/UserInterface_V1.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production/UserInterface_V1.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production/UserInterface_V1.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production/UserInterface_V1.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production/UserInterface_V1.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production/UserInterface_V1.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production/UserInterface_V1.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production/UserInterface_V1.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production/UserInterface_V1.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production/UserInterface_V1.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production/UserInterface_V1.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production/UserInterface_V1.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production/UserInterface_V1.X.production.obj
+lcdNibble@data 2 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+lcdNibble@temp 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__ptext10 ED0A 0 CODE 0 text10 dist/default/production/UserInterface_V1.X.production.obj
+__ptext11 EB82 0 CODE 0 text11 dist/default/production/UserInterface_V1.X.production.obj
+__ptext12 EAB0 0 CODE 0 text12 dist/default/production/UserInterface_V1.X.production.obj
+__ptext13 EC26 0 CODE 0 text13 dist/default/production/UserInterface_V1.X.production.obj
+__ptext14 EA86 0 CODE 0 text14 dist/default/production/UserInterface_V1.X.production.obj
+__ptext15 ED5C 0 CODE 0 text15 dist/default/production/UserInterface_V1.X.production.obj
+__ptext16 ECBA 0 CODE 0 text16 dist/default/production/UserInterface_V1.X.production.obj
+__ptext17 EAEA 0 CODE 0 text17 dist/default/production/UserInterface_V1.X.production.obj
+__ptext18 EF3C 0 CODE 0 text18 dist/default/production/UserInterface_V1.X.production.obj
+__ptext19 EE8E 0 CODE 0 text19 dist/default/production/UserInterface_V1.X.production.obj
+__ptext20 EB0E 0 CODE 0 text20 dist/default/production/UserInterface_V1.X.production.obj
+__ptext21 EA9E 0 CODE 0 text21 dist/default/production/UserInterface_V1.X.production.obj
+__ptext22 EDB2 0 CODE 0 text22 dist/default/production/UserInterface_V1.X.production.obj
+__ptext23 EE0C 0 CODE 0 text23 dist/default/production/UserInterface_V1.X.production.obj
+__ptext24 EBAC 0 CODE 0 text24 dist/default/production/UserInterface_V1.X.production.obj
+__ptext25 EB5A 0 CODE 0 text25 dist/default/production/UserInterface_V1.X.production.obj
+___ftadd EF3C 0 CODE 0 text18 dist/default/production/UserInterface_V1.X.production.obj
+___ftneg EAEA 0 CODE 0 text17 dist/default/production/UserInterface_V1.X.production.obj
+___lldiv EE0C 0 CODE 0 text23 dist/default/production/UserInterface_V1.X.production.obj
+___lwdiv ED0A 0 CODE 0 text10 dist/default/production/UserInterface_V1.X.production.obj
+___lwmod EBE4 0 CODE 0 text9 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank10 0 0 ABS 0 bank10 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank11 0 0 ABS 0 bank11 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank12 0 0 ABS 0 bank12 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank13 0 0 ABS 0 bank13 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank14 0 0 ABS 0 bank14 dist/default/production/UserInterface_V1.X.production.obj
+__Lbank15 0 0 ABS 0 bank15 dist/default/production/UserInterface_V1.X.production.obj
+delay_10ms@n 2 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production/UserInterface_V1.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production/UserInterface_V1.X.production.obj
+__CFG_BORV$3 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production/UserInterface_V1.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production/UserInterface_V1.X.production.obj
+?___ftpack 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+_printf F0E8 0 CODE 0 text5 dist/default/production/UserInterface_V1.X.production.obj
+__size_of_set_time 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+main@past_seconds 2A 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+Eeprom_WriteByte@address 4 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+_LATDbits F8C 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+main@page 24 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production/UserInterface_V1.X.production.obj
+main@time 2E 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@check 2B 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+___lwdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_572 36 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_573 37 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_574 38 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_582 39 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_583 3A 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_584 3B 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_595 3C 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_596 3D 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_597 3E 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_599 3F 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_600 40 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_601 41 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_603 42 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_604 43 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_605 44 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_607 45 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_608 46 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_609 47 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_611 48 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_612 49 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_613 4A 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_623 4C 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_624 4D 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_625 4E 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_627 4F 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_628 50 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_629 51 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_632 52 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_633 53 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@i_634 54 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@k_575 57 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production/UserInterface_V1.X.production.obj
+stackhi F7F 0 ABS 0 - /tmp/xc1dNHX3J.obj
+stacklo 80 0 ABS 0 - /tmp/xc1dNHX3J.obj
+__Lintcode 0 0 CODE 0 intcode dist/default/production/UserInterface_V1.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production/UserInterface_V1.X.production.obj
+__end_of_I2C_Master_Init EE0C 0 CODE 0 text22 dist/default/production/UserInterface_V1.X.production.obj
+__end_of_I2C_Master_Read EB34 0 CODE 0 text20 dist/default/production/UserInterface_V1.X.production.obj
+__end_of_I2C_Master_Stop EA72 0 CODE 0 text3 dist/default/production/UserInterface_V1.X.production.obj
+__end_of_I2C_Master_Wait EAB0 0 CODE 0 text21 dist/default/production/UserInterface_V1.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production/UserInterface_V1.X.production.obj
+set_time@i 4 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__end_of_I2C_Master_Start EA6A 0 CODE 0 text4 dist/default/production/UserInterface_V1.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__end_of_I2C_Master_Write EA7C 0 CODE 0 text2 dist/default/production/UserInterface_V1.X.production.obj
+_PIR2bits FA1 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+Eeprom_ReadByte@address 3 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@address_min 59 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+printf@ap 1A 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+Eeprom_WriteByte@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__size_of_I2C_Master_Start 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_happynewyear FEFA 0 MEDIUMCONST 0 mediumconst dist/default/production/UserInterface_V1.X.production.obj
+__size_of_I2C_Master_Write 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+end_of_initialization EA7C 0 CODE 0 cinit dist/default/production/UserInterface_V1.X.production.obj
+main@eeprom_min 5B 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/UserInterface_V1.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production/UserInterface_V1.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of_printf 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_OSC$HS 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+___lwdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+?___ftadd 9 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+?___ftneg 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+?___lldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+?___lwdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+?___lwmod 8 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/production/UserInterface_V1.X.production.obj
+_set_time EC6C 0 CODE 0 text1 dist/default/production/UserInterface_V1.X.production.obj
+_initLCD EC26 0 CODE 0 text13 dist/default/production/UserInterface_V1.X.production.obj
+__Lramtop 1000 0 RAM 0 ramtop dist/default/production/UserInterface_V1.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production/UserInterface_V1.X.production.obj
+__pcinit EA7C 0 CODE 0 cinit dist/default/production/UserInterface_V1.X.production.obj
+__ptext0 F3F4 0 CODE 0 text0 dist/default/production/UserInterface_V1.X.production.obj
+__ptext1 EC6C 0 CODE 0 text1 dist/default/production/UserInterface_V1.X.production.obj
+__ptext2 EA72 0 CODE 0 text2 dist/default/production/UserInterface_V1.X.production.obj
+__ptext3 EA6A 0 CODE 0 text3 dist/default/production/UserInterface_V1.X.production.obj
+__ptext4 EA62 0 CODE 0 text4 dist/default/production/UserInterface_V1.X.production.obj
+__ptext5 F0E8 0 CODE 0 text5 dist/default/production/UserInterface_V1.X.production.obj
+__ptext6 EA92 0 CODE 0 text6 dist/default/production/UserInterface_V1.X.production.obj
+__ptext7 EACC 0 CODE 0 text7 dist/default/production/UserInterface_V1.X.production.obj
+__ptext8 EB34 0 CODE 0 text8 dist/default/production/UserInterface_V1.X.production.obj
+__ptext9 EBE4 0 CODE 0 text9 dist/default/production/UserInterface_V1.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production/UserInterface_V1.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production/UserInterface_V1.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production/UserInterface_V1.X.production.obj
+__end_of_set_time ECBA 0 CODE 0 text1 dist/default/production/UserInterface_V1.X.production.obj
+__ramtop 1000 0 RAM 0 ramtop /tmp/xc1dNHX3J.obj
+__end_of_Eeprom_ReadByte EB82 0 CODE 0 text25 dist/default/production/UserInterface_V1.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup dist/default/production/UserInterface_V1.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/UserInterface_V1.X.production.obj
+_I2C_Master_Init EDB2 0 CODE 0 text22 dist/default/production/UserInterface_V1.X.production.obj
+_I2C_Master_Read EB0E 0 CODE 0 text20 dist/default/production/UserInterface_V1.X.production.obj
+_I2C_Master_Stop EA6A 0 CODE 0 text3 dist/default/production/UserInterface_V1.X.production.obj
+_I2C_Master_Wait EA9E 0 CODE 0 text21 dist/default/production/UserInterface_V1.X.production.obj
+_isdigit EACC 0 CODE 0 text7 dist/default/production/UserInterface_V1.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/UserInterface_V1.X.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/UserInterface_V1.X.production.obj
+__end_of__initialization EA7C 0 CODE 0 cinit dist/default/production/UserInterface_V1.X.production.obj
+?_delay_1s_interrupt 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production/UserInterface_V1.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production/UserInterface_V1.X.production.obj
+___ftpack@sign 5 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@current_state 28 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+___lldiv@quotient 9 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+_T1CKPS0 7E6C 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_T1CKPS1 7E6D 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+_T1OSCEN 7E6B 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__end_of_happynewyear FF01 0 MEDIUMCONST 0 mediumconst dist/default/production/UserInterface_V1.X.production.obj
+__pmediumconst FED6 0 MEDIUMCONST 0 mediumconst dist/default/production/UserInterface_V1.X.production.obj
+_SSPCON1 FC6 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_SSPCON2 FC5 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_SSPSTAT FC7 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_Eeprom_WriteByte EBAC 0 CODE 0 text24 dist/default/production/UserInterface_V1.X.production.obj
+__CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__end_of_keys FEE8 0 MEDIUMCONST 0 mediumconst dist/default/production/UserInterface_V1.X.production.obj
+__end_of_main FED6 0 CODE 0 text0 dist/default/production/UserInterface_V1.X.production.obj
+isdigit@c 3 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+_Eeprom_ReadByte EB5A 0 CODE 0 text25 dist/default/production/UserInterface_V1.X.production.obj
+_delay_10ms EAB0 0 CODE 0 text12 dist/default/production/UserInterface_V1.X.production.obj
+printf@idx 19 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+printf@val 1D 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+_ACKDT 7E2D 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_ACKEN 7E2C 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_ADRES FC3 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__end_of_dpowers FEF2 0 MEDIUMCONST 0 mediumconst dist/default/production/UserInterface_V1.X.production.obj
+_EEADR FA9 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_PORTB F81 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_T1CON FCD 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_TRISE F96 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__end_of_putch EA9E 0 CODE 0 text6 dist/default/production/UserInterface_V1.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production/UserInterface_V1.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production/UserInterface_V1.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production/UserInterface_V1.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production/UserInterface_V1.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production/UserInterface_V1.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production/UserInterface_V1.X.production.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_nRBPU 7F8F 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+_putch EA92 0 CODE 0 text6 dist/default/production/UserInterface_V1.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+main@count_min_final 60 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@past_min 29 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@flag_interrupt 66 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+main@count_seconds 62 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__initialization EA7C 0 CODE 0 cinit dist/default/production/UserInterface_V1.X.production.obj
+main@up_period 63 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__end_of_lcdNibble EDB2 0 CODE 0 text15 dist/default/production/UserInterface_V1.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production/UserInterface_V1.X.production.obj
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production/UserInterface_V1.X.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production/UserInterface_V1.X.production.obj
+__size_of_lcdNibble 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production/UserInterface_V1.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/UserInterface_V1.X.production.obj
+__size_of_I2C_Master_Init 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of_I2C_Master_Read 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of_I2C_Master_Stop 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__size_of_I2C_Master_Wait 0 0 ABS 0 - dist/default/production/UserInterface_V1.X.production.obj
+__Hintcode 0 0 CODE 0 intcode dist/default/production/UserInterface_V1.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 EA7C EA7C A 1
+idloc 0 200000 200000 8 1
+text0 0 F3F4 F3F4 AE2 1
+text1 0 EC6C EC6C 4E 1
+text2 0 EA72 EA72 A 1
+text3 0 EA6A EA6A 8 1
+text4 0 EA62 EA62 8 1
+text5 0 F0E8 F0E8 30C 1
+text6 0 EA92 EA92 C 1
+text7 0 EACC EACC 1E 1
+text8 0 EB34 EB34 26 1
+text9 0 EBE4 EBE4 42 1
+text10 0 ED0A ED0A 52 1
+text11 0 EB82 EB82 2A 1
+text12 0 EAB0 EAB0 1C 1
+text13 0 EC26 EC26 46 1
+text14 0 EA86 EA86 C 1
+text15 0 ED5C ED5C 56 1
+text16 0 ECBA ECBA 50 1
+text17 0 EAEA EAEA 24 1
+text18 0 EF3C EF3C 1AC 1
+text19 0 EE8E EE8E AE 1
+text20 0 EB0E EB0E 26 1
+text21 0 EA9E EA9E 12 1
+text22 0 EDB2 EDB2 5A 1
+text23 0 EE0C EE0C 82 1
+text24 0 EBAC EBAC 38 1
+text25 0 EB5A EB5A 28 1
+cstackCOMRAM 1 1 1 67 1
+reset_vec 0 0 0 4 1
+mediumconst 0 FED6 FED6 12A 1
+config 0 300000 300000 E 1

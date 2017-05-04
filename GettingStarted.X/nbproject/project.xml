@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>GettingStarted</name>
+            <creation-uuid>92434f4f-87c4-4cd8-b5e1-04f93b99a67d</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <c-extensions/>
+            <cpp-extensions/>
+            <header-extensions/>
+            <asminc-extensions/>
+            <make-dep-projects/>
+            <sourceEncoding>UTF-8</sourceEncoding>
+        </data>
+    </configuration>
+</project>
